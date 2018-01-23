@@ -1,0 +1,277 @@
+//Old Background
+.background-fullscreen {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-attachment:fixed;
+}
+
+//Old Main
+.main-content {
+  padding: 25px;
+  border: 4px solid black;
+  float: left;
+  width: 100%;
+  margin-bottom: em(30);
+  background: white;
+
+  h1 {
+    margin: 0;
+    font-size: em(16);
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  hr {
+    margin: 16px 0;
+  }
+
+  .half {
+    float: left;
+    width: 50%;
+    padding-right: 10px;
+
+    @media screen and ($bp-smaller-than-tablet) {
+      width: 100%;
+    }
+  }
+
+  .fifth {
+    float: left;
+    width: 20%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+
+    @media screen and ($bp-smaller-than-tablet) {
+      width: 100%;
+    }
+  }
+
+  ul {
+    li {
+      font-size: em(13);
+      font-weight: 300;
+      line-height: 1.7;
+
+      p {
+        margin-left: 5px;
+        font-style: italic;
+        font-size: em(11);
+        line-height: 1.2;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .instagram-image {
+    display: inline-block;
+  }
+  .instagram-caption {
+    margin-top: 15px;
+    height: 175px;
+  }
+
+  .third {
+    float: left;
+    width: 33%;
+    padding-right: 10px;
+
+   @media screen and ($bp-smaller-than-tablet) {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: em(16);
+      margin-bottom: 0;
+    }
+    .featuring {
+      margin-left: 5px;
+      font-style: italic;
+      font-size: em(11);
+      line-height: 1.2;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.active {
+  color: #f26cb7 !important;
+}
+
+.meta {
+  display: none;
+}
+
+.twitter-icon {
+  display: block;
+  text-align: right;
+  width: 100%;
+}
+
+.responsive-menu {
+  @media screen and ($bp-larger-than-tablet) {
+
+      display:none;
+
+  }
+  cursor: pointer;
+
+
+
+
+  .fa-bars {
+    margin: 25px 0 10px;
+  }
+
+  .fa-close {
+    margin: 25px 0;
+  }
+}
+
+.reponsive-menu{
+  .navigation{
+    @media screen and ($bp-smaller-than-tablet) {
+
+      display:none;
+
+  }
+  }
+}
+
+@media only screen and (max-width:500px){
+  .responsive-menu{
+    .navigation ul{
+      display:none;
+    }
+  }
+}
+
+.desktop-menu {
+
+  @media screen and ($bp-smaller-than-tablet) {
+    display: none !important;
+  }
+
+}
+
+.responsive {
+
+  @media screen and ($bp-smaller-than-tablet) {
+    display: none !important;
+  }
+
+}
+.right {
+  float: right !important;
+}
+
+#instafeed{
+  flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+//Old Menus
+.sidebar {
+  padding: 25px;
+  border: 4px solid black;
+  background: white;
+  margin-bottom: 2rem;
+  top: 210px;
+}
+
+.home {
+  .sidebar {
+    @media screen and ($bp-smaller-than-tablet) {
+      // display: none;
+    }
+  }
+}
+
+.navigation {
+  @media screen and ($bp-smaller-than-tablet) {
+    // display:none;
+  }
+	ul {
+		li {
+			margin-bottom: 20px;
+			a {
+				color: black;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+}
+
+.social {
+  a {
+    color: black;
+  }
+}
+
+// @media only screen and (max-width:500px){
+//   .responsive-menu{
+//     display:none;
+//   }
+// }
+
+.twitter {
+  padding: 25px;
+  border: 4px solid black;
+  font-size: em(16);
+  background: white;
+  margin-bottom: 2rem;
+  top: 535px;
+}
+
+.home {
+  .twitter {
+    @media screen and ($bp-smaller-than-tablet) {
+
+      // display: none;
+    }
+  }
+}
+
+.cards {
+  font-size: em(13);
+  text-align: center;
+  top: 750px;
+
+  &.fixed{
+    top:544px;
+  }
+}
+
+.home {
+  .cards {
+    @media screen and ($bp-smaller-than-tablet) {
+
+
+      // display: none;
+    }
+  }
+}
+
+.fixed {
+  @media screen and ($bp-smaller-than-tablet) {
+    position: fixed;
+    width: inherit;
+  }
+}
+
+//Old Modules
+.homepage-fullscreen {
+  .callout {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+}
