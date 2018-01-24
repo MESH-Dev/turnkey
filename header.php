@@ -39,104 +39,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <!-- <script src="js/yarids.js"></script> -->
 
-<!-- <script type="text/javascript">
+<!-- <script type="text/javascript">-->
 
-$( document ).ready(function() {
-
-	var html = $('html');
-
-	function showBackgrounds() {
-
-		if ((window.location.href.indexOf('.php') == -1) || (window.location.href.indexOf('index.php') > -1)) {
-
-			$.fn.preload = function() { this.each(function(){ $('<img/>')[0].src = this; }); }
-
-			//Homepage preload and image array
-
-			$([
-			"images/LR_FW16.jpg",
-			"images/LR_FW16_fullbody.jpg",
-			"images/ChanLuu_FW16.jpg",
-			"images/Yarids_SamEdelmanFW16.jpg",
-			"images/FW2016-RL.jpg",
-			"images/Yarids_FW2016_Beautifeel.jpg",
-			//"images/Yarids_Sp16_Green_03.jpg",
-			//"images/Yarids_Sp16_Purple_01.jpg",
-			//"images/Yarids_Sp16_Purple_02.jpg",
-			//"images/Yarids_Sp16_Purple_03.jpg",
-			//"images/Yarids_Sp16_Purple_04.jpg",
-			//"images/Yarids_Sp16_Purple_05.jpg",
-			//"images/Yarids_Sp16_Red_01.jpg",
-			//"images/Yarids_Sp16_Red_02.jpg",
-			//"images/Yarids_Sp16_Red_03.jpg",
-			//"images/Yarids_Sp16_Red_04.jpg"
-			]).preload();
-
-			var bgs = [
-			"images/LR_FW16.jpg",
-			"images/LR_FW16_fullbody.jpg",
-			"images/ChanLuu_FW16.jpg",
-			"images/Yarids_SamEdelmanFW16.jpg",
-			"images/FW2016-RL.jpg",
-			"images/Yarids_FW2016_Beautifeel.jpg",
-			//"images/Yarids_Sp16_Green_03.jpg",
-			//"images/Yarids_Sp16_Purple_01.jpg",
-			//"images/Yarids_Sp16_Purple_02.jpg",
-			//"images/Yarids_Sp16_Purple_03.jpg",
-			//"images/Yarids_Sp16_Purple_04.jpg",
-			//"images/Yarids_Sp16_Purple_05.jpg",
-			//"images/Yarids_Sp16_Red_01.jpg",
-			//"images/Yarids_Sp16_Red_02.jpg",
-			//"images/Yarids_Sp16_Red_03.jpg",
-			//"images/Yarids_Sp16_Red_04.jpg",
-			];
-
-
-			function changeBackground(curNumber) {
-
-				html.css({
-					//This is an "array" of css properties, add more if necessary
-					"background-image": "url(" + bgs[curNumber] + ") ",
-					"background-repeat": "no-repeat",
-					"background-position": "center center",
-					"background-size" : "cover"
-				});
-
-				curNumber++;
-
-				if(curNumber == bgs.length) {
-					curNumber = 0;
-				}
-
-				if (curNumber % 3 == 0) {
-					setTimeout(function(){changeBackground(curNumber)}, 2000);
-				} else {
-					setTimeout(function(){changeBackground(curNumber)}, 750);
-				}
-
-			}
-
-			changeBackground(0);
-		}
-
-	}
-
-	//Commented out while animation is not needed.  Uncomment to bring back.
-	//setTimeout(showBackgrounds, 3000);
-
-});
-
-
-
-</script> -->
 
 </head>
 <?php
 	$site_logo = get_field('site_logo', 'options');
 	// var_dump($site_logo);
 	$logo_url = $site_logo['sizes']['medium'];
-?>
-<body class="home background-fullscreen" style="background-image:url('<?php bloginfo('template_directory') ?>/img/ex1.jpg')">
+	$background_images = get_field('background_images');
+	$rand_bg = array_rand($background_images);
+	$bg_url = $background_images[$rand_bg]["image_choice"]["sizes"]['background-fullscreen'];
+	?>
+	<body class="home background-fullscreen" style="background-image:url('<?php echo $bg_url ?>')">
 <!-- <//?php if (strpos($_SERVER['SCRIPT_NAME'], 'index.php') !== false) { ?><//?php } ?> -->
 	<div class="container">
 		<div class="row">
@@ -178,8 +93,8 @@ $( document ).ready(function() {
 							  echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
 						  } ?>
 						<div class="social">
-							<a href="https://www.facebook.com/pages/Yarids-Charleston/64910405871" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
-							<a href="https://instagram.com/yaridsshoes/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
+							<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
+							<a href="https://instagram.com/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
 						</div>
 					</div>
 				</div>
@@ -217,8 +132,9 @@ $( document ).ready(function() {
 			      } ?>
 			    </div>
 			    <div class="social">
-			      <a href="https://www.facebook.com/pages/Yarids-Charleston/64910405871" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
-			      <a href="https://instagram.com/yaridsshoes/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
+			      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
+			      <a href="https://instagram.com/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
+					<a href="https://www.yelp.com/biz/elk-city-records-charleston" target="_blank"><i class="fa fa-lg fa-yelp"></i></a>
 			    </div>
 			  </div>
 

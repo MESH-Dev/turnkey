@@ -8,9 +8,9 @@
     </div> -->
   <!-- </div> -->
   <!-- <div class="row"> -->
-    <div class="cards">
+    <!-- <div class="cards">
         <p><a href="mailto:info@yarids.com">info.yarids@gmail.com</a> &nbsp; &nbsp; <span class="mesh">Website by <a href="http://meshfresh.com" target="_blank">MESH</a></span></p>
-    </div>
+    </div> -->
   <!-- </div> -->
 <!-- </div> -->
 

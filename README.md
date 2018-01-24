@@ -1,6 +1,6 @@
-# MESH-Starter-Theme
+# MESH-Turnkey
 
-This theme is the starting point for new MESH Wordpress projects.
+Turnkey is a boilerplate WordPress website.
 
 Tools
 ---------------
