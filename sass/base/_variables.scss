@@ -11,6 +11,7 @@ $bp-larger-than-tablet    : "min-width: 750px" !default;
 $bp-larger-than-desktop   : "min-width: 1000px" !default;
 $bp-larger-than-desktophd : "min-width: 1200px" !default;
 
+$bp-smaller-than-desktophd : "max-width: 1200px" !default;
 $bp-smaller-than-desktop : "max-width: 1060px" !default;
 $bp-smaller-than-tablet : "max-width: 750px" !default;
 $bp-smaller-than-mobile : "max-width: 480px" !default;
@@ -21,7 +22,8 @@ $red: #a42126 !default;
 $white: #FFFFFF !default;
 $black: #000000 !default;
 $translucent-white: rgba(255,255,255,0.8);
-$translucent-black: rgba(0,0,0,0.6);
+$translucent-black: rgba(255,255,255,0.8);
+$bluegreen: #141D24 !default;
 
 
 //Fonts

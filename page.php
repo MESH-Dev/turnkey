@@ -1,10 +1,40 @@
 <?php get_header(); ?>
 
-<div class="columns-9">
+<div class="columns-7">
 	<main class="main-content" id="content">
-		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-			<?php the_content(); ?>
-		<?php endwhile; ?>
+		<?php
+		$callout = get_field('page_callout');
+		if ($callout) {
+			?>
+			<h4 class="page-callout"><?php the_field('page_callout'); ?></h1>
+				<hr>
+			<?php
+		}
+		?>
+
+		<?php
+		$classes = '';
+	  if (have_rows('page_columns')):
+		  $rows = get_field('page_columns');
+			$row_count = count($rows);
+			if($row_count == 1){
+				 $classes= 'class="content columns-12"';
+			} elseif($row_count == 2){
+			  $classes='class="content columns-6"';
+		  }
+				 while(have_rows('page_columns')):the_row();
+			//         // display a sub field value
+					//   $content = the_sub_field('column_content');
+					  ?>
+					  <div <?php echo $classes ?>>
+						<?php the_sub_field('column_content'); ?>
+					  </div>
+					  <?php
+				 endwhile;
+			else :
+				 // no rows found
+			endif;
+			?>
 	</main>
 </div>
 

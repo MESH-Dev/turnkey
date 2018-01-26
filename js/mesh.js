@@ -1,16 +1,36 @@
-jQuery(document).ready(function($){
 
-  //Are we loaded?
-  console.log('New theme loaded!');
-  // Old Instafeed JS. Was directly in instagram page php
-   // var feed = new Instafeed({
-   //    get: 'user',
-   //    userId: 309487880,
-   //    accessToken: '309487880.1e4e611.452c5ed21cd0456b82d9f9da2168cce6',
-   //    template: '<div class="half"><div class="instagram-image"><a href="{{link}}"><img src="{{image}}" /></a></div><div class="instagram-caption"><p>{{caption}}</p></div></div>',
-   //    resolution: 'standard_resolution'
-   // });
-   // feed.run();
-  //Let's do something awesome!
+
+jQuery(document).ready(function($){
+   console.log('working');
+
+   $('#menuTrigger').click(function(){
+      $('ul.menu').slideToggle();
+   });
+
+   var userFeed = new Instafeed({
+       get: 'user',
+      //  clientId: 'd346c1de6d274f4994f9345b72b3a633',
+       userId: 1167443738,
+       accessToken: '1167443738.1677ed0.8626f5a5334746de8f919ce75757d845',
+       template: '<div class="half ig-card"><div class="instagram-image"><a href="{{link}}"><img src="{{image}}" /></a></div><div class="instagram-caption"><p>{{caption}}</p></div></div>',
+       resolution: 'standard_resolution'
+   });
+
+   userFeed.run();
+ //   var click_ctr = 0
+ //      $('.responsive-menu i.menu-trigger').click(function(){
+ //       click_ctr++
+ //
+ //       if(click_ctr==1){
+ //          $('.responsive-menu .navigation ul').show();
+ //          $(this).removeClass('fa-bars').addClass('fa-close');
+ //       }else{
+ //          $('.responsive-menu .navigation ul').hide();
+ //          $(this).removeClass('fa-close').addClass('fa-bars');
+ //          click_ctr=0;
+ //       }
+ // //$(this).toggleClass('fa-close fa-bars');
+ // //$('.navigation').toggle();
+ //   });
 
 });
