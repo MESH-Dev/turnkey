@@ -1,16 +1,6 @@
 <?php get_header(); ?>
 
 <div class="columns-7">
-	<main class="main-content" id="content">
-		<?php
-		$callout = get_field('page_callout');
-		if ($callout) {
-			?>
-			<h4 class="page-callout"><?php the_field('page_callout'); ?></h1>
-				<hr>
-			<?php
-		}
-		?>
 
 		<?php
 		$classes = '';
@@ -26,16 +16,26 @@
 			//         // display a sub field value
 					//   $content = the_sub_field('column_content');
 					  ?>
-					  <div <?php echo $classes ?>>
-						<?php the_sub_field('column_content'); ?>
-					  </div>
+					  <main class="main-content" id="content">
+							  <?php
+							  $callout = get_field('page_callout');
+							  if ($callout) {
+								  ?>
+								  <h4 class="page-callout"><?php the_field('page_callout'); ?></h1>
+									  <hr>
+								  <?php
+							  }
+							  ?>
+						  <div <?php echo $classes ?>>
+							<?php the_sub_field('column_content'); ?>
+						  </div>
+					  </main>
 					  <?php
 				 endwhile;
 			else :
 				 // no rows found
 			endif;
 			?>
-	</main>
 </div>
 
 <!-- <main id="content">
