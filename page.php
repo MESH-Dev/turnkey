@@ -31,7 +31,6 @@
 					  <?php
 				 endwhile;?>
 				 </main>
-				 // no rows found
 			<?php endif; ?>
 </div>
 
