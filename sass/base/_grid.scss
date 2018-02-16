@@ -87,6 +87,12 @@ $max-width: 1200px;
 
 	}
 
+   &.content{
+      @media screen and ($bp-smaller-than-desktophd){
+         width: 100%;
+      }
+   }
+
 }
 
 [class*='offset-by-'] {

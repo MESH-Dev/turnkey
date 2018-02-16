@@ -21,6 +21,8 @@
 	================================================== -->
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
+	<script type="text/javascript" src="//fast.fonts.net/jsapi/6283a7b2-3148-48a3-b6f2-238d9f705f64.js"></script>
+
 	<!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="images/favicon.ico">
@@ -112,12 +114,6 @@
 
 				  <div class="cards fixed">
 				    <p><a class="info-item" href="mailto:info@example.com">info@example.com</a><span class="mesh info-item">Website by <a href="http://meshfresh.com" target="_blank">MESH</a></span></p>
-				    <!-- <p>
-				      <img src="images/icons/visa-straight-32px.png">
-				      <img src="images/icons/mastercard-straight-32px.png">
-				      <img src="images/icons/discover-straight-32px.png">
-				      <img src="images/icons/american-express-straight-32px.png">
-				    </p> -->
 				  </div>
 
 				</div>

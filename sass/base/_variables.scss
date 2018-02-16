@@ -1,7 +1,7 @@
 // Variables
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$radius: 5px;
+$radius: 0px;
 
 // Breakpoints
 // Example Usage: @media($bp-smaller-than-tablet) { ... }
@@ -20,10 +20,15 @@ $bp-smaller-than-phablet   : "max-width: 550px" !default;
 // Colors
 $red: #a42126 !default;
 $white: #FFFFFF !default;
+$offwhite: #E4E5E9 !default;
 $black: #000000 !default;
-$translucent-white: rgba(255,255,255,0.8);
+$translucent-white: rgba(255,255,255,0.9);
 $translucent-black: rgba(255,255,255,0.8);
 $bluegreen: #141D24 !default;
+$bluegrey: #ADBAAC !default;
+$copper: #E38D7A !default;
+$lightblue: #54ECF7 !default;
+$fountainblue: #4FBDB3 !default;
 
 
 //Fonts

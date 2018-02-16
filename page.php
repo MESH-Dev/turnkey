@@ -14,7 +14,7 @@
 				if ($callout) {
 					?>
 					<h4 class="page-callout"><?php the_field('page_callout'); ?></h1>
-						<hr>
+						<hr class="callout-hr">
 					<?php
 				}
 				if($row_count == 1){
@@ -33,31 +33,5 @@
 				 </main>
 			<?php endif; ?>
 </div>
-
-<!-- <main id="content">
-
-	<div class="container">
-		<div class="row">
-			<div class="columns-9">
-				<//?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-					<h1><//?php the_title(); ?></h1>
-
-					<//?php the_content(); ?>
-
-				<//?php endwhile; ?>
-			</div>
-
-			<div class="columns-3">
-
-				 Change this to repeater of custom fields -->
-
-				<!-- <//?php get_sidebar(); ?>
-			</div>
-
-		</div>
-	</div>
-
-</main> End of Content -->
 
 <?php get_footer(); ?>
