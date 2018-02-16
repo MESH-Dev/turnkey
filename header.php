@@ -96,8 +96,8 @@
 			      } ?>
 			    </div>
 			    <div class="social">
-			      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
-			      <a href="https://instagram.com/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
+			      <a href="https://www.facebook.com/elkcityrecords/" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
+			      <a href="https://www.instagram.com/ecrecords/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
 					<a href="https://www.yelp.com/biz/elk-city-records-charleston" target="_blank"><i class="fa fa-lg fa-yelp"></i></a>
 			    </div>
 			  </div>
