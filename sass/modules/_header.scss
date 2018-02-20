@@ -22,23 +22,13 @@
      font-family: $ag-demi;
      text-align: center;
      line-height: 36px;
-   color: $white;
-   font-size: 1.8rem;
+      color: $white;
+      font-size: 1.8rem;
      display: none;
+     cursor: pointer;
      letter-spacing: 2.4px;
      @media screen and ($bp-smaller-than-tablet){
         display: block;
-     }
-     &::after{
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        background-color: $offwhite;
-        transition: transform 0.4s ease-in-out;
      }
      &:hover{
         text-decoration: none;

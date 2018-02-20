@@ -895,6 +895,7 @@ td:last-child {
   color: #fff;
   font-size: 1.8rem;
   display: none;
+  cursor: pointer;
   letter-spacing: 2.4px;
 }
 @media screen and (max-width: 750px) {
@@ -903,29 +904,17 @@ td:last-child {
     display: block;
   }
 }
-/* line 32, sass/modules/_header.scss */
-.navigation a#menuTrigger::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #E4E5E9;
-  transition: transform 0.4s ease-in-out;
-}
-/* line 43, sass/modules/_header.scss */
+/* line 33, sass/modules/_header.scss */
 .navigation a#menuTrigger:hover {
   text-decoration: none;
 }
 @media screen and (max-width: 750px) {
-  /* line 48, sass/modules/_header.scss */
+  /* line 38, sass/modules/_header.scss */
   .navigation ul.menu {
     display: none;
   }
 }
-/* line 53, sass/modules/_header.scss */
+/* line 43, sass/modules/_header.scss */
 .navigation ul li {
   list-style-type: none;
   margin-bottom: 0px;
@@ -934,7 +923,7 @@ td:last-child {
   position: relative;
   padding: 10px 0;
 }
-/* line 60, sass/modules/_header.scss */
+/* line 50, sass/modules/_header.scss */
 .navigation ul li::after {
   content: '';
   display: block;
@@ -949,17 +938,17 @@ td:last-child {
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
 }
-/* line 76, sass/modules/_header.scss */
+/* line 66, sass/modules/_header.scss */
 .navigation ul li:hover::after {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
-/* line 82, sass/modules/_header.scss */
+/* line 72, sass/modules/_header.scss */
 .navigation ul li.current-menu-item::after {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
-/* line 87, sass/modules/_header.scss */
+/* line 77, sass/modules/_header.scss */
 .navigation ul li a {
   font-family: "ITC Avant Garde Gothic W01 Dm", sans-serif;
   display: block;
@@ -967,18 +956,18 @@ td:last-child {
   letter-spacing: 2.4px;
   font-size: 1.5rem;
 }
-/* line 95, sass/modules/_header.scss */
+/* line 85, sass/modules/_header.scss */
 .navigation ul li a:hover {
   text-decoration: none;
 }
 @media screen and (max-width: 750px) {
-  /* line 87, sass/modules/_header.scss */
+  /* line 77, sass/modules/_header.scss */
   .navigation ul li a {
     text-align: center;
   }
 }
 
-/* line 108, sass/modules/_header.scss */
+/* line 98, sass/modules/_header.scss */
 .sidebar {
   padding: 10px 0 14px 0;
   margin-bottom: 1rem;
@@ -986,13 +975,13 @@ td:last-child {
   overflow: hidden;
 }
 @media screen and (max-width: 750px) {
-  /* line 108, sass/modules/_header.scss */
+  /* line 98, sass/modules/_header.scss */
   .sidebar {
     margin-bottom: 0px;
   }
 }
 
-/* line 129, sass/modules/_header.scss */
+/* line 119, sass/modules/_header.scss */
 .logo {
   margin-bottom: 10px;
   padding-top: 15px;
@@ -1000,12 +989,12 @@ td:last-child {
   z-index: 100;
   border-radius: 0px;
 }
-/* line 139, sass/modules/_header.scss */
+/* line 129, sass/modules/_header.scss */
 .logo img {
   max-width: 65%;
 }
 @media screen and (max-width: 750px) {
-  /* line 129, sass/modules/_header.scss */
+  /* line 119, sass/modules/_header.scss */
   .logo {
     display: none;
   }
