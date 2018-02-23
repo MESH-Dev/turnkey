@@ -97,24 +97,15 @@
 			         echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
 			      } ?>
 			    </div>
-			    <div class="social">
+			    <!-- <div class="social">
 			      <a href="https://www.facebook.com/elkcityrecords/" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
 			      <a href="https://www.instagram.com/ecrecords/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
 					<a href="https://www.yelp.com/biz/elk-city-records-charleston" target="_blank"><i class="fa fa-lg fa-yelp"></i></a>
-			    </div>
+			    </div> -->
 			  </div>
-
-
-			  <!-- <div class="twitter fixed">
-			      <//?php echo $TweetPHP->get_tweet_list(); ?>
-			      <div class="social">
-			        <a href="" target="_blank"><i class="fa fa-lg fa-twitter-square twitter-icon"></i></a>
-			      </div>
-			  </div> -->
-
-				  <div class="cards fixed">
-				    <p><a class="info-item" href="mailto:info@example.com">info@example.com</a><span class="mesh info-item">Website by <a href="http://meshfresh.com" target="_blank">MESH</a></span></p>
-				  </div>
+				  <!-- <div class="cards fixed">
+				    <p><a class="info-item" href="mailto:contact@elkcityrecords.com">contact@elkcityrecords.com</a><span class="mesh info-item">Website by <a href="http://meshfresh.com" target="_blank">MESH</a></span></p>
+				  </div> -->
 
 				</div>
 			</header>

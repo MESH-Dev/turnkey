@@ -117,15 +117,14 @@
 // }
 
 .logo {
-
-  // margin: em(30) 0 0;
   margin-bottom: 10px;
   padding-top: 15px;
-  // border: 4px solid black;
   text-align: center;
-  // background: $white;
   z-index: 100;
-  border-radius: $radius;
+  transition: opacity 0.25s ease-in-out;
+  &:hover{
+     opacity: 0.75;
+ }
   img {
       max-width: 65%;
   }

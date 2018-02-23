@@ -181,9 +181,9 @@
   }
 
 }
-.right {
-  float: right !important;
-}
+// .right {
+//   float: right !important;
+// }
 
 #instafeed{
   flex-direction: row;
@@ -193,31 +193,25 @@
 }
 
 .social {
-   text-align: center;
-   padding: 0 20px;
+   margin-bottom: 14px;
    @media screen and ($bp-smaller-than-tablet){
-      display: none;
    }
   a {
-     font-size: 2rem;
+     font-size: 1.6rem;
     color: $white;
     margin: 10px;
   }
-  &.mobile{
-     display: none;
-     text-align: center;
-     padding: 20px 0;
+  &.footer{
+      display: inline-block;
+     text-align: right;
+     float: right;
      @media screen and ($bp-smaller-than-tablet){
-        display: inline-block;
+        display: block;
+        float: none;
+        text-align: center;
      }
  }
 }
-
-// @media only screen and (max-width:500px){
-//   .responsive-menu{
-//     display:none;
-//   }
-// }
 
 .twitter {
   padding: 25px;
@@ -238,18 +232,35 @@
 }
 
 .cards {
-  font-size: 1.4rem;
+   display: inline-block;
+  font-size: 1rem;
   text-align: center;
   top: 750px;
   text-align: center;
-  // padding-left: 20px;
-  @media screen and ($bp-smaller-than-tablet){
-     display: none;
+  padding: 14px 0;
+  p{
+     color: $white;
+     @media screen and ($bp-smaller-than-tablet){
+        margin-bottom: 1rem;
+     }
  }
- &.mobile{
-    display: none;
+ &.left{
+    float: left;
+    text-align: left;
     @media screen and ($bp-smaller-than-tablet){
       display: block;
+      float: none;
+      text-align: center;
+      padding-bottom: 0px;
+   }
+}
+ &.right{
+    float: right;
+    text-align: right;
+    @media screen and ($bp-smaller-than-tablet){
+      display: block;
+      float: none;
+      text-align: center;
    }
 }
   .info-item{
@@ -266,15 +277,22 @@
   }
 }
 
-.home {
-  .cards {
-    @media screen and ($bp-smaller-than-tablet) {
-
-
-      // display: none;
-    }
-  }
+.content{
+   img{
+      max-width: 100%;
+      height: auto;
+   }
 }
+
+// .home {
+//   .cards {
+//     @media screen and ($bp-smaller-than-tablet) {
+//
+//
+//       // display: none;
+//     }
+//   }
+// }
 
 h4.page-callout{
    color: $fountainblue;
@@ -290,12 +308,12 @@ hr {
   }
 }
 
-.fixed {
-  // @media screen and ($bp-smaller-than-tablet) {
-  //   position: fixed;
-  //   width: inherit;
-  // }
-}
+// .fixed {
+//   // @media screen and ($bp-smaller-than-tablet) {
+//   //   position: fixed;
+//   //   width: inherit;
+//   // }
+// }
 
 //Old Modules
 .homepage-fullscreen {

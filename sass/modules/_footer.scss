@@ -3,9 +3,9 @@
 //
 //Old
 footer{
-   text-align: center;
+   display: inline-block;
+   width: 100%;
    @media screen and ($bp-smaller-than-tablet){
-      display: inline-block;
-      width: 100%;
+      text-align: center;
    }
 }

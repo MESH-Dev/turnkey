@@ -15,8 +15,14 @@ userFeed.run();
 </script> -->
 <div class="columns-7">
 	<main class="main-content" id="content">
-      <!-- <h1><strong>Yarid's Wishlist</strong> - Follow our Instagram to see more products!</h1>
-      <hr>-->
+		<?php
+		$callout = get_field('page_callout');
+		if ($callout) {
+			?>
+			<h4 class="page-callout"><?php the_field('page_callout'); ?></h1>
+				<hr class="callout-hr">
+			<?php
+		} ?>
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 			<?php the_content(); ?>
 		<?php endwhile; ?>
