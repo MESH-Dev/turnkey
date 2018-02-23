@@ -198,7 +198,7 @@
    }
   a {
      font-size: 1.6rem;
-    color: $white;
+    color: $black;
     margin: 10px;
   }
   &.footer{
@@ -239,7 +239,7 @@
   text-align: center;
   padding: 14px 0;
   p{
-     color: $white;
+     color: $black;
      @media screen and ($bp-smaller-than-tablet){
         margin-bottom: 1rem;
      }
@@ -267,10 +267,10 @@
      display: block;
  }
  a{
-    color: $white;
+    color: $black;
 }
  .mesh {
-    color: $white;
+    color: $black;
 }
   &.fixed{
     top:544px;

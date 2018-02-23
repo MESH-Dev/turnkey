@@ -892,7 +892,7 @@ td:last-child {
   font-family: "ITC Avant Garde Gothic W01 Dm", sans-serif;
   text-align: center;
   line-height: 36px;
-  color: #fff;
+  color: #000;
   font-size: 1.8rem;
   display: none;
   cursor: pointer;
@@ -932,7 +932,7 @@ td:last-child {
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: #E4E5E9;
+  background-color: #000;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   transition: -webkit-transform 0.4s ease-in-out;
@@ -952,7 +952,7 @@ td:last-child {
 .navigation ul li a {
   font-family: "ITC Avant Garde Gothic W01 Dm", sans-serif;
   display: block;
-  color: #fff;
+  color: #000;
   letter-spacing: 2.4px;
   font-size: 1.5rem;
 }
@@ -1201,7 +1201,7 @@ footer {
 /* line 199, sass/modules/_modules.scss */
 .social a {
   font-size: 1.6rem;
-  color: #fff;
+  color: #000;
   margin: 10px;
 }
 /* line 204, sass/modules/_modules.scss */
@@ -1240,7 +1240,7 @@ footer {
 }
 /* line 241, sass/modules/_modules.scss */
 .cards p {
-  color: #fff;
+  color: #000;
 }
 @media screen and (max-width: 750px) {
   /* line 241, sass/modules/_modules.scss */
@@ -1281,11 +1281,11 @@ footer {
 }
 /* line 269, sass/modules/_modules.scss */
 .cards a {
-  color: #fff;
+  color: #000;
 }
 /* line 272, sass/modules/_modules.scss */
 .cards .mesh {
-  color: #fff;
+  color: #000;
 }
 /* line 275, sass/modules/_modules.scss */
 .cards.fixed {
