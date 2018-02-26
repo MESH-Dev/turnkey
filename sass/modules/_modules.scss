@@ -194,8 +194,6 @@
 
 .social {
    margin-bottom: 12px;
-   @media screen and ($bp-smaller-than-tablet){
-   }
   a {
      font-size: 1.6rem;
     color: $white;
@@ -205,7 +203,7 @@
       display: inline-block;
      text-align: right;
      float: right;
-     @media screen and ($bp-smaller-than-tablet){
+     @media screen and (max-width: 940px){
         display: block;
         float: none;
         text-align: center;
@@ -241,14 +239,14 @@
   p{
      color: $white;
      font-size: 1.4rem;
-     @media screen and ($bp-smaller-than-tablet){
+     @media screen and (max-width: 940px){
         margin-bottom: 1rem;
      }
  }
  &.left{
     float: left;
     text-align: left;
-    @media screen and ($bp-smaller-than-tablet){
+    @media screen and (max-width: 940px){
       display: block;
       float: none;
       text-align: center;
@@ -258,18 +256,25 @@
  &.right{
     float: right;
     text-align: right;
-    @media screen and ($bp-smaller-than-tablet){
+    @media screen and (max-width: 940px){
       display: block;
       float: none;
       text-align: center;
+      padding-top: 6px;
    }
 }
-  .info-item{
-     display: block;
- }
+.divider{
+   @media screen and (max-width: 940px){
+      display: none;
+   }
+}
  .address{
-    display: block;
     margin-bottom: 10px;
+}
+.line-one, .line-two{
+   @media screen and (max-width: 940px){
+      display: block;
+   }
 }
  a{
     color: $white;

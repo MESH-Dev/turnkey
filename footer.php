@@ -2,10 +2,8 @@
 
 <footer class="site-footer">
    <div class="cards fixed left">
-      <p>
-         <span class="address">311 Washington Street, West | Charleston, WV  25302</span>
-         <span class="info-item"><a href="tel:681-265-9468">681-265-9468</a> | <a href="mailto:contact@elkcityrecords.com">contact@elkcityrecords.com</a></span>
-      </p>
+      <p class="address"><span class="line-one">311 Washington Street, West</span><span class="divider"> | </span><span class="line-two">Charleston, WV  25302</span></p>
+      <p class="info-item"><span class="line-one"><a href="tel:681-265-9468">681-265-9468</a></span><span class="divider"> | </span><span class="line-two"><a href="mailto:contact@elkcityrecords.com">contact@elkcityrecords.com</a></span></p>
    </div>
    <div class="cards fixed right">
       <div class="footer social">
