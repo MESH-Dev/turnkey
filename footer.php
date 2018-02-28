@@ -2,11 +2,8 @@
 
 <footer class="site-footer">
    <div class="cards fixed left">
-      <p>
-         311 Example Street, West<br>Charleston, WV  12345
-         <a class="info-item" href="tel:123-456-1234">123-456-1234</a>
-         <a class="info-item" href="mailto:example@example.com">example@example.com</a>
-      </p>
+      <p class="address"><span class="line-one">311 Washington Street, West</span><span class="divider"> | </span><span class="line-two">Charleston, WV  25302</span></p>
+      <p class="info-item"><span class="line-one"><a href="tel:681-265-9468">681-265-9468</a></span><span class="divider"> | </span><span class="line-two"><a href="mailto:contact@elkcityrecords.com">contact@elkcityrecords.com</a></span></p>
    </div>
    <div class="cards fixed right">
       <div class="footer social">

@@ -1004,13 +1004,13 @@ td:last-child {
   }
 }
 
-/* line 5, sass/modules/_footer.scss */
+/* line 6, sass/modules/_footer.scss */
 footer {
   display: inline-block;
   width: 100%;
 }
-@media screen and (max-width: 750px) {
-  /* line 5, sass/modules/_footer.scss */
+@media screen and (max-width: 940px) {
+  /* line 6, sass/modules/_footer.scss */
   footer {
     text-align: center;
   }
@@ -1196,22 +1196,22 @@ footer {
 
 /* line 195, sass/modules/_modules.scss */
 .social {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
-/* line 199, sass/modules/_modules.scss */
+/* line 197, sass/modules/_modules.scss */
 .social a {
   font-size: 1.6rem;
   color: #000;
   margin: 10px;
 }
-/* line 204, sass/modules/_modules.scss */
+/* line 202, sass/modules/_modules.scss */
 .social.footer {
   display: inline-block;
   text-align: right;
   float: right;
 }
-@media screen and (max-width: 750px) {
-  /* line 204, sass/modules/_modules.scss */
+@media screen and (max-width: 940px) {
+  /* line 202, sass/modules/_modules.scss */
   .social.footer {
     display: block;
     float: none;
@@ -1219,7 +1219,7 @@ footer {
   }
 }
 
-/* line 216, sass/modules/_modules.scss */
+/* line 214, sass/modules/_modules.scss */
 .twitter {
   padding: 25px;
   border: 4px solid black;
@@ -1229,7 +1229,7 @@ footer {
   top: 535px;
 }
 
-/* line 234, sass/modules/_modules.scss */
+/* line 232, sass/modules/_modules.scss */
 .cards {
   display: inline-block;
   font-size: 1rem;
@@ -1238,23 +1238,24 @@ footer {
   text-align: center;
   padding: 14px 0;
 }
-/* line 241, sass/modules/_modules.scss */
+/* line 239, sass/modules/_modules.scss */
 .cards p {
   color: #000;
+  font-size: 1.4rem;
 }
-@media screen and (max-width: 750px) {
-  /* line 241, sass/modules/_modules.scss */
+@media screen and (max-width: 940px) {
+  /* line 239, sass/modules/_modules.scss */
   .cards p {
     margin-bottom: 1rem;
   }
 }
-/* line 247, sass/modules/_modules.scss */
+/* line 246, sass/modules/_modules.scss */
 .cards.left {
   float: left;
   text-align: left;
 }
-@media screen and (max-width: 750px) {
-  /* line 247, sass/modules/_modules.scss */
+@media screen and (max-width: 940px) {
+  /* line 246, sass/modules/_modules.scss */
   .cards.left {
     display: block;
     float: none;
@@ -1262,60 +1263,74 @@ footer {
     padding-bottom: 0px;
   }
 }
-/* line 257, sass/modules/_modules.scss */
+/* line 256, sass/modules/_modules.scss */
 .cards.right {
   float: right;
   text-align: right;
 }
-@media screen and (max-width: 750px) {
-  /* line 257, sass/modules/_modules.scss */
+@media screen and (max-width: 940px) {
+  /* line 256, sass/modules/_modules.scss */
   .cards.right {
     display: block;
     float: none;
     text-align: center;
+    padding-top: 6px;
   }
 }
-/* line 266, sass/modules/_modules.scss */
-.cards .info-item {
-  display: block;
+@media screen and (max-width: 940px) {
+  /* line 266, sass/modules/_modules.scss */
+  .cards .divider {
+    display: none;
+  }
 }
-/* line 269, sass/modules/_modules.scss */
+/* line 271, sass/modules/_modules.scss */
+.cards .address {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 940px) {
+  /* line 274, sass/modules/_modules.scss */
+  .cards .line-one, .cards .line-two {
+    display: block;
+  }
+}
+/* line 279, sass/modules/_modules.scss */
 .cards a {
   color: #000;
 }
-/* line 272, sass/modules/_modules.scss */
+/* line 282, sass/modules/_modules.scss */
 .cards .mesh {
   color: #000;
+  font-size: 1rem;
 }
-/* line 275, sass/modules/_modules.scss */
+/* line 286, sass/modules/_modules.scss */
 .cards.fixed {
   top: 544px;
 }
 
-/* line 281, sass/modules/_modules.scss */
+/* line 292, sass/modules/_modules.scss */
 .content img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 297, sass/modules/_modules.scss */
+/* line 308, sass/modules/_modules.scss */
 h4.page-callout {
   color: #4FBDB3;
 }
 
-/* line 301, sass/modules/_modules.scss */
+/* line 312, sass/modules/_modules.scss */
 hr {
   margin: 16px 0;
   display: block;
   background-color: #4FBDB3;
   height: 2px;
 }
-/* line 306, sass/modules/_modules.scss */
+/* line 317, sass/modules/_modules.scss */
 hr.callout-hr {
   margin-bottom: 32px;
 }
 
-/* line 320, sass/modules/_modules.scss */
+/* line 331, sass/modules/_modules.scss */
 .homepage-fullscreen .callout {
   text-align: center;
   display: block;

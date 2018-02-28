@@ -1,3 +1,4 @@
+
 // //Old
 // @include sticky-footer(75px, ".content-fullscreen", "#footer-fullscreen");
 //
@@ -5,7 +6,7 @@
 footer{
    display: inline-block;
    width: 100%;
-   @media screen and ($bp-smaller-than-tablet){
+   @media screen and (max-width: 940px){
       text-align: center;
    }
 }
