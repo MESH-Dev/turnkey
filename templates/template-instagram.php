@@ -28,5 +28,5 @@ userFeed.run();
 		<?php endwhile; ?>
       <div id="instafeed"></div>
 	</main>
+	<?php get_footer(); ?>
 </div>
-<?php get_footer(); ?>
