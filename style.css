@@ -1009,7 +1009,7 @@ footer {
   display: inline-block;
   width: 100%;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1060px) {
   /* line 5, sass/modules/_footer.scss */
   footer {
     text-align: center;
@@ -1025,7 +1025,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
 /* line 14, sass/modules/_modules.scss */
@@ -1206,11 +1206,11 @@ footer {
 }
 /* line 202, sass/modules/_modules.scss */
 .social.footer {
-  display: inline-block;
+  width: 100%;
   text-align: right;
   float: right;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1060px) {
   /* line 202, sass/modules/_modules.scss */
   .social.footer {
     display: block;
@@ -1243,7 +1243,7 @@ footer {
   color: #fff;
   font-size: 1.4rem;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1060px) {
   /* line 239, sass/modules/_modules.scss */
   .cards p {
     margin-bottom: 1rem;
@@ -1254,7 +1254,7 @@ footer {
   float: left;
   text-align: left;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1060px) {
   /* line 246, sass/modules/_modules.scss */
   .cards.left {
     display: block;
@@ -1268,7 +1268,7 @@ footer {
   float: right;
   text-align: right;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1060px) {
   /* line 256, sass/modules/_modules.scss */
   .cards.right {
     display: block;
@@ -1277,7 +1277,7 @@ footer {
     padding-top: 6px;
   }
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1060px) {
   /* line 266, sass/modules/_modules.scss */
   .cards .divider {
     display: none;
@@ -1287,7 +1287,7 @@ footer {
 .cards .address {
   margin-bottom: 10px;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1060px) {
   /* line 274, sass/modules/_modules.scss */
   .cards .line-one, .cards .line-two {
     display: block;

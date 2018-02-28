@@ -5,7 +5,7 @@
 footer{
    display: inline-block;
    width: 100%;
-   @media screen and (max-width: 940px){
+   @media screen and ($bp-smaller-than-desktop){
       text-align: center;
    }
 }
