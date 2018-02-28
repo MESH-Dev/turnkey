@@ -7,9 +7,19 @@
    </div>
    <div class="cards fixed right">
       <div class="footer social">
-        <a href="https://www.facebook.com/elkcityrecords/" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
+         <?php
+         if (have_rows('social_nav', 'options')):
+            while (have_rows('social_nav', 'options')): the_row();
+               $icon = get_sub_field('social_icon');
+               $url = get_sub_field('social_url');
+               ?>
+               <a href="<?php echo $url ?>" target="_blank"><i class="<?php echo $icon ?>"></i></a>
+            <?php endwhile;
+         endif;
+         ?>
+        <!-- <a href="https://www.facebook.com/elkcityrecords/" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
         <a href="https://www.instagram.com/ecrecords/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
-        <a href="https://www.yelp.com/biz/elk-city-records-charleston" target="_blank"><i class="fa fa-lg fa-yelp"></i></a>
+        <a href="https://www.yelp.com/biz/elk-city-records-charleston" target="_blank"><i class="fa fa-lg fa-yelp"></i></a> -->
       </div>
      <p><span class="mesh info-item">Website by <a href="http://meshfresh.com" target="_blank">MESH</a></span></p>
    </div>

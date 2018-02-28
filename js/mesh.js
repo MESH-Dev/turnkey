@@ -1,5 +1,3 @@
-
-
 jQuery(document).ready(function($){
    console.log('working');
 
@@ -17,20 +15,5 @@ jQuery(document).ready(function($){
    });
 
    userFeed.run();
- //   var click_ctr = 0
- //      $('.responsive-menu i.menu-trigger').click(function(){
- //       click_ctr++
- //
- //       if(click_ctr==1){
- //          $('.responsive-menu .navigation ul').show();
- //          $(this).removeClass('fa-bars').addClass('fa-close');
- //       }else{
- //          $('.responsive-menu .navigation ul').hide();
- //          $(this).removeClass('fa-close').addClass('fa-bars');
- //          click_ctr=0;
- //       }
- // //$(this).toggleClass('fa-close fa-bars');
- // //$('.navigation').toggle();
- //   });
 
 });
