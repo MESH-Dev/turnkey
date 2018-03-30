@@ -13,7 +13,7 @@
 				$callout = get_field('page_callout');
 				if ($callout) {
 					?>
-					<h4 class="page-callout"><?php the_field('page_callout'); ?></h1>
+					<h4 class="page-callout"><?php the_field('page_callout'); ?></h4>
 						<hr class="callout-hr">
 					<?php
 				}

@@ -338,8 +338,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
+/* line 23, sass/base/_typography.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: underline;
+}
 /* line 25, sass/base/_typography.scss */
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  text-decoration: none;
+}
+
+/* line 31, sass/base/_typography.scss */
 h1 {
   font-size: 5.4rem;
   line-height: 1;
@@ -348,7 +356,7 @@ h1 {
   color: #ADBAAC;
 }
 
-/* line 26, sass/base/_typography.scss */
+/* line 32, sass/base/_typography.scss */
 h2 {
   font-size: 4.2rem;
   line-height: 1;
@@ -357,7 +365,7 @@ h2 {
   color: #E38D7A;
 }
 
-/* line 27, sass/base/_typography.scss */
+/* line 33, sass/base/_typography.scss */
 h3 {
   font-size: 3.6rem;
   line-height: normal;
@@ -366,7 +374,7 @@ h3 {
   color: #ADBAAC;
 }
 
-/* line 28, sass/base/_typography.scss */
+/* line 34, sass/base/_typography.scss */
 h4 {
   font-size: 3.0rem;
   line-height: 1.05;
@@ -375,7 +383,7 @@ h4 {
   color: #4FBDB3;
 }
 
-/* line 29, sass/base/_typography.scss */
+/* line 35, sass/base/_typography.scss */
 h5 {
   font-size: 2.4rem;
   line-height: normal;
@@ -384,7 +392,7 @@ h5 {
   color: #E38D7A;
 }
 
-/* line 30, sass/base/_typography.scss */
+/* line 36, sass/base/_typography.scss */
 h6 {
   font-size: 1.5rem;
   line-height: normal;
@@ -394,38 +402,38 @@ h6 {
 }
 
 @media (max-width: 750px) {
-  /* line 34, sass/base/_typography.scss */
+  /* line 40, sass/base/_typography.scss */
   h1 {
     font-size: 4.0rem;
   }
 
-  /* line 35, sass/base/_typography.scss */
+  /* line 41, sass/base/_typography.scss */
   h2 {
     font-size: 3.6rem;
   }
 
-  /* line 36, sass/base/_typography.scss */
+  /* line 42, sass/base/_typography.scss */
   h3 {
     font-size: 3.0rem;
   }
 
-  /* line 37, sass/base/_typography.scss */
+  /* line 43, sass/base/_typography.scss */
   h4 {
     font-size: 2.4rem;
   }
 
-  /* line 38, sass/base/_typography.scss */
+  /* line 44, sass/base/_typography.scss */
   h5 {
     font-size: 1.8rem;
   }
 
-  /* line 39, sass/base/_typography.scss */
+  /* line 45, sass/base/_typography.scss */
   h6 {
     font-size: 1.5rem;
   }
 }
-/* line 42, sass/base/_typography.scss */
-p {
+/* line 48, sass/base/_typography.scss */
+p, ul, ol {
   font-family: "American Typewriter ITC W01 Md", serif;
   font-size: 1.5rem;
   margin-top: 0;
@@ -433,13 +441,23 @@ p {
   color: #000;
 }
 
-/* line 53, sass/base/_typography.scss */
+/* line 59, sass/base/_typography.scss */
+ul li {
+  list-style-type: disc;
+}
+
+/* line 65, sass/base/_typography.scss */
+ol li {
+  list-style-type: decimal;
+}
+
+/* line 70, sass/base/_typography.scss */
 a {
   font-family: "American Typewriter ITC W01 Bd", serif;
   color: #4FBDB3;
 }
 
-/* line 58, sass/base/_typography.scss */
+/* line 75, sass/base/_typography.scss */
 li {
   font-weight: 400;
   color: #000;
@@ -1079,21 +1097,6 @@ footer {
     width: 100%;
     padding: 0px;
   }
-}
-/* line 63, sass/modules/_modules.scss */
-.main-content ul li {
-  font-size: 0.8125em;
-  font-weight: 300;
-  line-height: 1.7;
-}
-/* line 68, sass/modules/_modules.scss */
-.main-content ul li p {
-  margin-left: 5px;
-  font-style: italic;
-  font-size: 0.6875em;
-  line-height: 1.2;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 /* line 79, sass/modules/_modules.scss */
 .main-content .instagram-image {
