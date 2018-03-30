@@ -451,18 +451,18 @@ ol li {
   list-style-type: decimal;
 }
 
-/* line 70, sass/base/_typography.scss */
-ul, ol h1, h2, h3, h4, h5, h6 {
+/* line 71, sass/base/_typography.scss */
+li h1, li h2, li h3, li h4, li h5, li h6 {
   display: inline;
 }
 
-/* line 74, sass/base/_typography.scss */
+/* line 76, sass/base/_typography.scss */
 a {
   font-family: "American Typewriter ITC W01 Bd", serif;
   color: #4FBDB3;
 }
 
-/* line 79, sass/base/_typography.scss */
+/* line 81, sass/base/_typography.scss */
 li {
   font-weight: 400;
   color: #000;
