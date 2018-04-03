@@ -287,25 +287,26 @@ body {
   font-size: 1.4em;
   line-height: 1.428;
   font-weight: 100;
+  min-height: 100vh;
 }
 
-/* line 28, sass/base/_base-styles.scss */
+/* line 29, sass/base/_base-styles.scss */
 a {
   text-decoration: none;
 }
-/* line 31, sass/base/_base-styles.scss */
+/* line 32, sass/base/_base-styles.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 40, sass/base/_base-styles.scss */
+/* line 41, sass/base/_base-styles.scss */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
 }
 
-/* line 51, sass/base/_base-styles.scss */
+/* line 52, sass/base/_base-styles.scss */
 li {
   list-style-type: circle;
 }
