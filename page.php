@@ -36,3 +36,5 @@
 		<?php get_footer(); ?>
 </div>
 </div><!--close row-->
+</body>
+</html>
