@@ -31,9 +31,9 @@
 					  <?php
 				 endwhile;?>
 				 </main>
-			 <?php get_footer(); ?>
+			 <!-- <//?php get_footer(); ?> -->
 		<?php endif; ?>
 </div>
 </div><!--close row-->
 
-<!-- <//?php get_footer(); ?> -->
+<?php get_footer(); ?>
