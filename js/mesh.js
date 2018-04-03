@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
    console.log('working');
 
    $('#menuTrigger').click(function(){
-      $('ul.menu').slideToggle();
+      $('ul.menu').toggleClass('open');
    });
 
    var userFeed = new Instafeed({

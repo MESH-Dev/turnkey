@@ -36,8 +36,16 @@
     }
 	ul {
       &.menu{
+         transition: all 0.2s ease-in-out;
          @media screen and ($bp-smaller-than-tablet){
-            display: none;
+            height: 0;
+            opacity: 0;
+            visibility: none;
+            &.open{
+               visibility: visible;
+               height: auto;
+               opacity: 1;
+            }
          }
       }
 		li {
