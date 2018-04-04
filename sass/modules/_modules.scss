@@ -7,25 +7,24 @@
   background-repeat:no-repeat;
   background-position:center center;
   background-attachment:fixed;
-  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: -1;
 }
 
 //Old Main
 .main-content {
   padding: 40px;
   overflow: hidden;
-  // border: 2px solid white;
   float: left;
   width: 100%;
-  // margin-bottom: em(30);
   background: $offwhite;
   border-radius: $radius;
-  // h1 {
-  //   margin: 0;
-  //   font-size: em(16);
-  //   text-transform: uppercase;
-  //   font-weight: 400;
-  // }
   @media screen and ($bp-smaller-than-tablet){
      padding: 20px;
  }

@@ -25,10 +25,24 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url(); ?>/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo site_url(); ?>/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo site_url(); ?>/favicon-16x16.png">
+	<link rel="manifest" href="<?php echo site_url(); ?>/site.webmanifest">
+	<link rel="mask-icon" href="<?php echo site_url(); ?>/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116901607-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-116901607-1');
+	</script>
+
 
 	<?php wp_head(); ?>
 
@@ -36,31 +50,28 @@
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
-<!-- <script type="text/javascript" src="<//?php bloginfo('template_directory'); ?>/js/instafeed.min.js"></script> -->
-
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-<!-- <script src="js/yarids.js"></script> -->
-
-<!-- <script type="text/javascript">-->
-
-
 </head>
 <?php
 	$site_logo = get_field('site_logo', 'options');
 	// var_dump($site_logo);
 	$logo_url = $site_logo['sizes']['medium'];
-	$background_images = get_field('background_images');
-	$rand_bg = array_rand($background_images);
-	$bg_url = $background_images[$rand_bg]["image_choice"]["sizes"]['background-fullscreen'];
+	if (!is_404()) {
+		$background_images = get_field('background_images');
+		$rand_bg = array_rand($background_images);
+		$bg_url = $background_images[$rand_bg]["image_choice"]["sizes"]['background-fullscreen'];
+	} else {
+		$bg_url = get_template_directory_uri() . '/img/404bg.jpg';
+	};
 	?>
-	<body class="home background-fullscreen" style="background-image:url('<?php echo $bg_url ?>')">
+	<div class="background-fullscreen" style="background-image:url('<?php echo $bg_url ?>')"></div>
+	<body class="home">
 <!-- <//?php if (strpos($_SERVER['SCRIPT_NAME'], 'index.php') !== false) { ?><//?php } ?> -->
 	<div class="container">
 		<div class="row">
       <div class="columns-3">
 			<header>
 				<div class="logo fixed">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $logo_url ?>" /></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img alt="site logo" src="<?php echo $logo_url ?>" /></a>
 				</div>
 				<div class="desktop-menu">
 			  <div class="sidebar fixed">

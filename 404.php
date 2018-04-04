@@ -1,14 +1,17 @@
 <?php get_header(); ?>
 
-<div id="content">
-	
-	<h1>Page Not Found</h1>
-	<p>The page you requested could not be found. Perhaps searching will help.</p>
-	
-	<?php get_search_form(); ?>
+<div class="columns-7">
+			<main class="main-content" id="content">
 
-</div><!-- End of Content -->
-
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+					<h4 class="page-callout">404</h4>
+						<hr class="callout-hr">
+						  <div class="columns-12">
+							<p>This page was not found! Use the navigation to go to a page that is on this site.</p>
+						  </div>
+				 </main>
+		<?php get_footer(); ?>
+</div>
+</div><!--close row-->
+</div><!--close container-->
+</body>
+</html>
