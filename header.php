@@ -21,8 +21,67 @@
 	================================================== -->
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
-	<script type="text/javascript" src="//fast.fonts.net/jsapi/6283a7b2-3148-48a3-b6f2-238d9f705f64.js"></script>
+	<!-- Typography -->
+	<?php
+	$pf_css = '';
+	$sf_css = '';
+	$font_select = get_field('font_pairing', 'option');
+	if ($font_select == 1) {
+		echo '<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">';
+		echo '<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">';
+		$pf_css = "font-family: 'Nunito Sans', sans-serif;";
+		$sf_css = "font-family: 'Merriweather', serif;";
+	} elseif($font_select == 2){
+		echo '<link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">';
+		$pf_css = "font-family: 'Montserrat', sans-serif;";
+		$sf_css = "font-family: 'Playfair Display', serif;";
+	} elseif($font_select == 3){
+		echo ' <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i|Zilla+Slab:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">';
+		$pf_css = "font-family: 'Ubuntu', sans-serif;";
+		$sf_css = "font-family: 'Zilla Slab', serif;";
+	} elseif($font_select == 4){
+		echo '<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">';
+		$pf_css = "font-family: 'IBM Plex Serif', serif;";
+		$sf_css = "font-family: 'Merriweather', serif;";
+	} elseif ($font_select == 5) {
+		echo '<link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i|Raleway:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">';
+		$pf_css = "font-family: 'Muli', sans-serif;";
+		$sf_css = "font-family: 'Raleway', sans-serif;";
+	} elseif ($font_select == 6) {
+		echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Zilla+Slab:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">';
+		$pf_css = "font-family: 'Zilla Slab', serif;";
+		$sf_css = "font-family: 'Open Sans', sans-serif;";
+	} else {
+		echo '<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">';
+		echo '<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">';
+		$pf_css = "font-family: 'Nunito Sans', sans-serif;";
+		$sf_css = "font-family: 'Merriweather', serif;";
+	};
+	?>
 
+	<style>
+		.pf,
+		h1,h2,h3,h4,h5,h6,
+		blockquote,
+		blockquote p,
+		.navigation,
+		.navigation ul li a,
+		a#menuTrigger,
+		footer p,
+		footer a,
+		input,
+		textarea{
+			<?php echo $pf_css;?>
+		}
+
+		.sf,
+		p,
+		ul,
+		a,
+		li{
+			<?php echo $sf_css;?>
+		}
+	</style>
 
 	<?php
 	$site_logo = get_field('site_logo', 'options');
@@ -42,6 +101,12 @@
 	<!-- SEO -->
 	<?php the_field('google_sitemap_verification', 'option'); ?>
 	<?php the_field('bing_sitemap_verification', 'option'); ?>
+
+	<?php
+	$primary_color = get_field('primary_color', 'option');
+	$secondary_color = get_field('secondary_color', 'option');
+	$tertiary_color = get_field('tertiary_color', 'options');
+	?>
 
 	<?php wp_head(); ?>
 

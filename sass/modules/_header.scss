@@ -19,7 +19,8 @@
  }
   a#menuTrigger{
      position: relative;
-     font-family: $ag-demi;
+     // font-family: $ag-demi;
+     font-weight: 600;
      text-align: center;
      line-height: 36px;
       color: $white;
@@ -83,9 +84,10 @@
             }
          }
 			a {
-            font-family: $ag-demi;
+            // font-family: $ag-demi;
             display: block;
 				color: $white;
+            font-weight: 600;
 				// text-transform: uppercase;
             // font-weight: 900;
             letter-spacing: 2.4px;

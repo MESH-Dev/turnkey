@@ -1,9 +1,15 @@
 
 
 <footer class="site-footer">
+   <?php
+   if (have_rows('page_columns')) { ?>
       <div class="cards fixed left">
-         <p class="address"><span class="line-one">311 Washington Street, West</span><span class="divider"> | </span><span class="line-two">Charleston, WV  25302</span></p>
-         <p class="info-item"><span class="line-one"><a href="tel:681-265-9468">681-265-9468</a></span><span class="divider"> | </span><span class="line-two"><a href="mailto:contact@elkcityrecords.com">contact@elkcityrecords.com</a></span></p>
+         <?php
+         $phone = get_field('phone_number', 'option');
+         $email = get_field('email_address', 'option');
+         ?>
+         <p class="address"><span class="line-one"><?php the_field('address_line_1', 'option'); ?></span><span class="divider"> | </span><span class="line-two"><?php the_field('address_line_2', 'option'); ?></span></p>
+         <p class="info-item"><span class="line-one"><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></span><span class="divider"> | </span><span class="line-two"><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></span></p>
       </div>
       <div class="cards fixed right">
          <div class="footer social">
@@ -23,6 +29,7 @@
          </div>
         <p><span class="mesh info-item">Website by <a href="http://meshfresh.com" target="_blank">MESH</a></span></p>
       </div>
+   <?php }; ?>
 </footer>
 
 <?php wp_footer(); ?>
