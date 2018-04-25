@@ -1,7 +1,6 @@
 
 
 <footer class="site-footer">
-   <?php if (!is_front_page()){ ?>
       <div class="cards fixed left">
          <p class="address"><span class="line-one">311 Washington Street, West</span><span class="divider"> | </span><span class="line-two">Charleston, WV  25302</span></p>
          <p class="info-item"><span class="line-one"><a href="tel:681-265-9468">681-265-9468</a></span><span class="divider"> | </span><span class="line-two"><a href="mailto:contact@elkcityrecords.com">contact@elkcityrecords.com</a></span></p>
@@ -24,7 +23,6 @@
          </div>
         <p><span class="mesh info-item">Website by <a href="http://meshfresh.com" target="_blank">MESH</a></span></p>
       </div>
-   <?php }; ?>
 </footer>
 
 <?php wp_footer(); ?>

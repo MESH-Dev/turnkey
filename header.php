@@ -23,26 +23,25 @@
 
 	<script type="text/javascript" src="//fast.fonts.net/jsapi/6283a7b2-3148-48a3-b6f2-238d9f705f64.js"></script>
 
+
+	<?php
+	$site_logo = get_field('site_logo', 'options');
+	$logo_url = $site_logo['sizes']['medium'];
+	$favicon_url = $site_logo['sizes']['small'];
+	?>
 	<!-- Favicons
 	================================================== -->
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo site_url(); ?>/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo site_url(); ?>/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo site_url(); ?>/favicon-16x16.png">
-	<link rel="manifest" href="<?php echo site_url(); ?>/site.webmanifest">
-	<link rel="mask-icon" href="<?php echo site_url(); ?>/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+	<link rel="shortcut icon" href="<?php echo $favicon_url ?>">
+	<link rel="apple-touch-icon" href="<?php echo $favicon_url ?>">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo $favicon_url ?>">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo $favicon_url ?>">
 
 	<!-- Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116901607-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+	<?php the_field('google_analytics_code', 'option'); ?>
 
-	  gtag('config', 'UA-116901607-1');
-	</script>
-
+	<!-- SEO -->
+	<?php the_field('google_sitemap_verification', 'option'); ?>
+	<?php the_field('bing_sitemap_verification', 'option'); ?>
 
 	<?php wp_head(); ?>
 
@@ -52,9 +51,6 @@
 
 </head>
 <?php
-	$site_logo = get_field('site_logo', 'options');
-	// var_dump($site_logo);
-	$logo_url = $site_logo['sizes']['medium'];
 	if (!is_404()) {
 		$background_images = get_field('background_images');
 		$rand_bg = array_rand($background_images);
