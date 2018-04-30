@@ -108,6 +108,36 @@
 	$tertiary_color = get_field('tertiary_color', 'options');
 	?>
 
+	<style>
+		h4.page-callout{
+			color: <?php echo $secondary_color; ?>;
+		}
+		hr{
+			background-color: <?php echo $secondary_color; ?>;
+		}
+		h1{
+			color: <?php echo $primary_color; ?>;
+		}
+		h2{
+			color: <?php echo $tertiary_color; ?>;
+		}
+		h3{
+			color: <?php echo $primary_color; ?>;
+		}
+		h4{
+			color: <?php echo $secondary_color; ?>;
+		}
+		h5{
+			color: <?php echo $tertiary_color; ?>;
+		}
+		h6{
+			color: <?php echo $secondary_color; ?>;
+		}
+		a{
+			color: <?php echo $secondary_color; ?>;
+		}
+	</style>
+
 	<?php wp_head(); ?>
 
 <!-- ////////////////////////// -->
@@ -137,13 +167,6 @@
 				<div class="desktop-menu">
 			  <div class="sidebar fixed">
 			    <div class="navigation">
-			      <!-- <ul>
-			        <li><a href="story.php" <//?php if($_SERVER['PHP_SELF'] == '/story.php'){echo 'class="active"';}?>>Our Story</a></li>
-			        <li><a href="philosophy.php" <//?php if($_SERVER['PHP_SELF'] == '/philosophy.php'){echo 'class="active"';}?>>Our Philosophy</a></li>
-			        <li><a href="designers.php" <//?php if($_SERVER['PHP_SELF'] == '/designers.php'){echo 'class="active"';}?>>Designers</a></li>
-			        <li><a href="wishlist.php" <//?php if($_SERVER['PHP_SELF'] == '/wishlist.php'){echo 'class="active"';}?>>Our Instagram</a></li>
-			        <li><a href="stores.php" <//?php if($_SERVER['PHP_SELF'] == '/stores.php'){echo 'class="active"';}?>>Our Stores</a></li>
-			      </ul> -->
 					<a id="mobileLogo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $logo_url ?>" /></a>
 					<a id="menuTrigger">Menu</a>
 			      <?php if(has_nav_menu('main_nav')){
@@ -169,16 +192,7 @@
 			         echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
 			      } ?>
 			    </div>
-			    <!-- <div class="social">
-			      <a href="https://www.facebook.com/elkcityrecords/" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
-			      <a href="https://www.instagram.com/ecrecords/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a>
-					<a href="https://www.yelp.com/biz/elk-city-records-charleston" target="_blank"><i class="fa fa-lg fa-yelp"></i></a>
-			    </div> -->
 			  </div>
-				  <!-- <div class="cards fixed">
-				    <p><a class="info-item" href="mailto:contact@elkcityrecords.com">contact@elkcityrecords.com</a><span class="mesh info-item">Website by <a href="http://meshfresh.com" target="_blank">MESH</a></span></p>
-				  </div> -->
-
 				</div>
 			</header>
 		</div>

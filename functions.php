@@ -15,7 +15,7 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
-   
+
 }
 
 //Custon wp-admin logo
@@ -28,5 +28,14 @@ function my_custom_login_logo() {
 		    </style>';
 }
 
+//Instagram
+function getInstagram(){
+    //Get Likes
+    $user  = get_field('instagram_user_id', 'option');
+    $token = get_field('instagram_access_token', 'option');
+    $json = file_get_contents("https://api.instagram.com/v1/users/$user/media/recent?access_token=$token");
+    $obj = json_decode($json);
+    return $obj->data;
+}
 
 ?>

@@ -24,7 +24,6 @@
   float: left;
   width: 100%;
   background: $offwhite;
-  border-radius: $radius;
   @media screen and ($bp-smaller-than-tablet){
      padding: 20px;
  }
@@ -312,13 +311,13 @@
 // }
 
 h4.page-callout{
-   color: $fountainblue;
+   // color: $fountainblue;
 }
 
 hr {
   margin: 16px 0;
   display: block;
- background-color: $fountainblue;
+ // background-color: $fountainblue;
  height: 2px;
  &.callout-hr{
    margin-bottom: 32px;

@@ -1,20 +1,6 @@
 // Typography
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
-@import url("https://use.typekit.net/gay3pql.css");
-
-$typewriter-med: 'American Typewriter ITC W01 Md', serif;
-$typewriter-light:'American Typewriter ITC W01 Lt', serif;
-$typewriter-bold:'American Typewriter ITC W01 Bd', serif;
-$ag-med:'ITC Avant Garde Gothic W01 Md', sans-serif;
-$ag-xlt:'ITC Avant Garde Gothic W01 XLt', sans-serif;
-$ag-demi:'ITC Avant Garde Gothic W01 Dm', sans-serif;
-$ag-black:'ITC Avant Garde Gothic W01 Bk', sans-serif;
-$ag-bold:'ITC Avant Garde Gothic W01 Bd', sans-serif;
-$bookman: "bookman-jf-pro",serif;
-
-
 h1, h2, h3, h4, h5, h6 {
    color: $black;
   margin-top: 0;
@@ -28,12 +14,12 @@ h1, h2, h3, h4, h5, h6 {
  }
 }
 
-h1 { font-size: 5.4rem; line-height: 1; letter-spacing: 4.4px; font-family: $ag-demi; color: $bluegrey;}
-h2 { font-size: 4.2rem; line-height: 1; letter-spacing: 4px; font-family: $ag-demi; color: $copper;}
-h3 { font-size: 3.6rem; line-height: normal; letter-spacing: 3.8px; font-family: $ag-demi; color: $bluegrey}
-h4 { font-size: 3.0rem; line-height: 1.05; letter-spacing: 3.2px; font-family: $ag-demi; color: $fountainblue;}
-h5 { font-size: 2.4rem; line-height: normal; font-family: $ag-demi; letter-spacing: 2.4px; color: $copper;}
-h6 { font-size: 1.5rem; line-height: normal; font-family: $ag-demi; letter-spacing: 1.5px; color: $fountainblue;}
+h1 { font-size: 5.4rem; line-height: 1; letter-spacing: 4.4px;}
+h2 { font-size: 4.2rem; line-height: 1; letter-spacing: 4px;}
+h3 { font-size: 3.6rem; line-height: normal; letter-spacing: 3.8px;}
+h4 { font-size: 3.0rem; line-height: 1.05; letter-spacing: 3.2px; color: $fountainblue;}
+h5 { font-size: 2.4rem; line-height: normal; letter-spacing: 2.4px; color: $copper;}
+h6 { font-size: 1.5rem; line-height: normal; letter-spacing: 1.5px; color: $fountainblue;}
 
 
 @media($bp-smaller-than-tablet) {
@@ -46,7 +32,6 @@ h6 { font-size: 1.5rem; line-height: normal; font-family: $ag-demi; letter-spaci
 }
 
 p, ul, ol {
-   font-family: $typewriter-med;
    // font-weight: 400;
   font-size: 1.5rem;
   // line-height: 1.428;
@@ -71,11 +56,6 @@ li{
    h1,h2,h3,h4,h5,h6{
       display: inline;
    }
-}
-
-a{
-   font-family: $typewriter-bold;
-   color: $fountainblue;
 }
 
 li{
